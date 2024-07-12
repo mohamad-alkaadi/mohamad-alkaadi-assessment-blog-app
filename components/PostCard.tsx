@@ -16,7 +16,7 @@ const PostCard = ({id, title, body}: {id:number,title:string, body:string }) => 
       <Box sx={{display:"flex", marginRight:2, justifyContent:"end"}}>
         <Link className='user-card-link' href={`posts/${id}`}>Show Details</Link>
       </Box>
-      </Grid>
+    </Grid>
   )
 }
 
