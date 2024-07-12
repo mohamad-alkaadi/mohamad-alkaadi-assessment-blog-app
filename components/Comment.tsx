@@ -3,9 +3,18 @@ import Typography from '@mui/material/Typography';
 const Comment = ({ email ,name, body}: {email:string, name:string, body:string }) => {
   return (
     <Box sx={{border:"1px solid #000", marginBottom:5}}>
-    <Typography variant='h2' sx={{ fontSize:"20px", fontWeight:700, marginBottom:2 }}>Name: {name}</Typography>
-    <Typography variant='h2' sx={{ fontSize:"18px", fontWeight:700, marginBottom:2 }}>Email:{email}</Typography>
-    <Typography variant='h3' sx={{ fontSize:"16px", fontWeight:400, marginBottom:2 }}>Body:{body}</Typography>
+      <Box sx={{display:"flex", marginBottom:2, alignItems:"center"}}>
+      <Typography variant='h2' sx={{ fontSize:"25px", fontWeight:700}}>Name:</Typography>
+      <Typography variant='h2' sx={{ fontSize:"25px", fontWeight:500}}>{name}</Typography>
+      </Box>
+      <Box sx={{display:"flex", marginBottom:2, alignItems:"center"}}>
+      <Typography variant='h2' sx={{ fontSize:"25px", fontWeight:700}}>Email:</Typography>
+      <Typography variant='h2' sx={{ fontSize:"25px", fontWeight:500}}>{email}</Typography>
+      </Box>
+      <Box sx={{display:"flex", marginBottom:2, alignItems:"center"}}>
+      <Typography variant='h2' sx={{ fontSize:"25px", fontWeight:700}}>Body:</Typography>
+      <Typography variant='h2' sx={{ fontSize:"25px", fontWeight:500}}>{body}</Typography>
+      </Box>
 </Box>
   )
 }
