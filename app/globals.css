@@ -7,7 +7,10 @@
     border-radius: 20px;
 
 }
+.user-card-link:hover{
+    background-color: #d8baba;
 
+}
 .nav-link{
     font-style: none;
     text-decoration: none;
