@@ -19,7 +19,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
       <AppRouterCacheProvider>
-<NavBar/>
+        <NavBar/>
         {children}      
         </AppRouterCacheProvider>
         </body>

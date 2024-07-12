@@ -14,8 +14,7 @@ const PostCard = ({id, title, body}: {id:number,title:string, body:string }) => 
       <Typography variant='h2' sx={{ fontSize:"25px", fontWeight:400,marginBottom:2, marginLeft:1}}>{body}.</Typography>
 
       <Box sx={{display:"flex", marginRight:2, justifyContent:"end"}}>
-      <Link className='user-card-link' href={`posts/${id}`}>Show Details</Link>
-
+        <Link className='user-card-link' href={`posts/${id}`}>Show Details</Link>
       </Box>
       </Grid>
   )

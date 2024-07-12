@@ -8,14 +8,13 @@ export default async function Home() {
  const posts = await getPosts()
  
   return (
-    <Box sx={{
-    }}>
+    <Box>
       <Typography sx={{fontSize:"50px", marginLeft:2}}>Posts List:</Typography>
-     <Grid container columns={12}>
-     {posts.map(post => (
-      <PostCard id={post.id} title={post.title} body={post.body}/>
-        ))}
-     </Grid>
+      <Grid container columns={12}>   
+        {posts.map(post => (
+          <PostCard id={post.id} title={post.title} body={post.body}/>
+          ))}
+      </Grid>
     </Box>
   );
 }
