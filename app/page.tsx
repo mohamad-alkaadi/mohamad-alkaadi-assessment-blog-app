@@ -7,7 +7,7 @@ export default async function Home() {
  
   return (
     <main >
-     <Grid container spacing={2} columns={12}>
+     <Grid container columns={12}>
      {posts.map(post => (
       <PostCard id={post.id} title={post.title} body={post.body}/>
         ))}

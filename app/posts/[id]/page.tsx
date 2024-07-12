@@ -13,7 +13,7 @@ export default async function page() {
   const comments = await getPostComments(params.id)
  
   return (
-    <Box sx={{border:"1px solid #000", padding:5}}>
+    <Box sx={{ padding:10}}>
       <Post title={post.title} body={post.body}/>
       <Typography variant='h1' sx={{ fontSize:"38px", fontWeight:700, marginBottom:2 }}>Comments</Typography>
 
