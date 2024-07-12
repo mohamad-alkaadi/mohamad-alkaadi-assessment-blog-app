@@ -15,7 +15,7 @@ export default async function page() {
   return (
     <Box sx={{ padding:10}}>
       <Post title={post.title} body={post.body}/>
-      <Typography variant='h1' sx={{ fontSize:"38px", fontWeight:700, marginBottom:2 }}>Comments</Typography>
+      <Typography sx={{fontSize:"50px", marginY:2}}>Comments</Typography>
 
 {comments.map(comment => (
       <Comment email={comment.email}  body={comment.body} name={comment.name}/>
